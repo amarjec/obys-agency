@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Silk Serif';
+    background-color: #151515;
+    color: #FFFFFF;
+}
+
+
+/* LOADER     LOADER      LOADER      LOADER      LOADER      LOADER      LOADER      LOADER      LOADER */
+#loader {
+    width: 100%;
+    height: 100vh;
+    padding: 20vh 0vw 0 7vw;
+    background-color: #0B0B0B;
+    position: fixed;
+    z-index: 9999;
+    text-transform: uppercase;
+}
+.line {
+    display: flex;
+    align-items: top;
+    width: 100%;
+    height: fit-content; 
+    overflow: hidden;
+}
+#line1-part1 {
+    display: flex;
+    margin-right: 5vw;
+    margin-top: -1vh;
+}
+#line1-part1 h5 {
+    width: 6vw;
+    /* background-color: red; */
+}
+#line1-part1 h5, h6 {
+    font-size: 3.5vw;
+    font-weight: 400;
+}
+.line h1 {
+    font-size: 7vw;
+    font-weight: 500; 
+    line-height: 7vw;
+    font-family: "Plain";
+}
+.line h2 {
+    margin-left: 3vw;
+    font-size: 6.5vw;
+    font-weight: 500; 
+    opacity: 0;
+    animation: now 1s linear infinite;
+} 
+#loader-btm {
+    position: absolute;
+    top: 75%;
+    left: 30%;  
+    overflow: hidden;
+}
+#loader-btm h6 {
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1vw;
+    /* font-style: italic; */
+    text-transform: none;
+}
+
+@keyframes now {
+    0% {
+        font-family: 'Plain';
+        color: white;
+        opacity: 1;
+    }
+    48% {
+        font-family: 'Plain';
+        color: white;
+        opacity: 0;
+    }
+    50% {
+        font-family: 'Silk Serif';
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        opacity: 0;
+    }
+    100% {
+        font-family: 'Silk Serif';
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        opacity: 1;
+    }
+    
+}
+
+
+
+/* PAGE1     PAGE1      PAGE1      PAGE1      PAGE1      PAGE1      PAGE1      PAGE1      PAGE1 */
+#pg1 {
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+
+
+
+/* PAGE2     PAGE2      PAGE2      PAGE2      PAGE2      PAGE2      PAGE2      PAGE2      PAGE2 */
+#pg2 {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* PAGE3     PAGE3      PAGE3      PAGE3      PAGE3      PAGE3      PAGE3      PAGE3      PAGE3 */
+#pg3 {
+    width: 100%;
+    height: 100vh;
+}
