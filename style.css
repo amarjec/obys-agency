@@ -10,6 +10,17 @@ html, body {
     background-color: #151515;
     color: #FFFFFF;
 }
+#crsr {
+    position: absolute;
+    z-index: 999999;
+    width: 2.2vw;
+    height: 2.2vw;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid white;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
 
 
 /* LOADER     LOADER      LOADER      LOADER      LOADER      LOADER      LOADER      LOADER      LOADER */
@@ -18,6 +29,7 @@ html, body {
     height: 100vh;
     padding: 20vh 0vw 0 7vw;
     background-color: #0B0B0B;
+    /* background-color: black; */
     position: fixed;
     z-index: 9999;
     text-transform: uppercase;
@@ -103,8 +115,104 @@ html, body {
 #pg1 {
     width: 100%;
     height: 100vh;
+    font-family: "Plain";
     /* background-color: red; */
 }
+#nav {
+    width: 100%;
+    height: 17vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+    margin-bottom: 16vh;
+}
+#lnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5vw;
+}
+#rnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5vw;
+}
+#rnav h3 {
+    font-size: .95vw;
+    font-weight: 500;
+}
+#cnav {
+    position: absolute;
+    top: 7%;
+    left: 28%;
+}
+#cnav h3 {
+    font-size: .95vw;
+    letter-spacing: .02vw;
+    font-weight: 100;
+    line-height: 1vw;
+}
+
+
+#pg1 h5 {
+    position: absolute;
+    left: 19%;
+    top: 33%;
+    font-size: 3vw;
+    font-family: 'Silk Serif';
+    font-style: italic;
+    font-weight: 500;
+}
+.hero {
+    width: 73%;
+    height: fit-content;
+    /* background-color: yellow; */
+    margin-left: 27%;    
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+   
+}
+.hero h1 {
+    font-size: 7.5vw;
+    font-weight: 500;
+    line-height: 7.35vw;
+    text-transform: uppercase;
+}
+
+#brdr1, #brdr2 {
+    border-bottom: .6vw solid white;
+}
+#brdr1:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    border-bottom: 0px;
+}
+#brdr2:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    border-bottom: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

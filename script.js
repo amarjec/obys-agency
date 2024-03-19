@@ -41,7 +41,7 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
-loco ()
+loco ();
 
 
 function loader() {
@@ -66,18 +66,60 @@ tl.from (".line h1, h2", {
     stagger: .2,
     duration: .5,
     delay: 0.2,
+    ease: Power1,
 }, "hello")
+
 tl.to ("#loader", {
     delay: 2.4,
-    duration: .5,
-    top: "-100%",
-    display: "none",
-}, "loader slide") 
+    duration: .4,
+    opacity: 0, 
+    ease: Power1,  
+})
+
+tl.from("#pg1", {
+  y: 1200,
+  duration: .2,
+  ease: Power4,
+})
+
+tl.to ("#loader", {
+   display: "none",
+})
+
+tl.from ("#pg1 #nav h3", {
+  opacity: 0,
+  duration: .2,
+})
+
+tl.from ("#pg1 .hero h1", {
+  y: 120,
+  stagger: .2,
+  duration: .5,
+})
+
+
 
 }
 loader();
 
 
+function cursor(){
+  var body = document.querySelector("body");
+body.addEventListener("mouseover", function(det){
+    gsap.to("#crsr",{
+      left: det.x,
+      top: det.y,
+    });
+});
+}
+cursor();
 
 
 
+
+
+
+
+
+
+Shery.makeMagnet("#nav h3, i");
