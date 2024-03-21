@@ -104,19 +104,105 @@ loader();
 
 
 function cursor(){
-  var body = document.querySelector("body");
-body.addEventListener("mouseover", function(det){
-    gsap.to("#crsr",{
-      left: det.x,
-      top: det.y,
-      ease: Power1,
-    });
-});
+  Shery.mouseFollower({
+    skew: true,
+    ease: "cubic-bezier(.23, 1, 0.320, 1)",
+    duration: 1,
+  });
 }
 cursor();
 
 
-Shery.makeMagnet("#rnav h3, #lnav i");
+function pg1Animation () {
+  var flag = document.querySelector("#flag")
+var hero3 = document.querySelector("#hero3")
+
+document.addEventListener("mousemove", function(det) {
+  gsap.to ("#flag", {
+    left: det.x,
+    top: det.y,
+  })
+})
+
+hero3.addEventListener("mouseenter", function(){
+  gsap.to(".mousefollower",{
+    opacity: 0,
+  })
+  gsap.to("#flag", {
+    opacity: 1,
+  })
+})
+hero3.addEventListener("mouseleave", function(){
+  gsap.to(".mousefollower",{
+    opacity: 1,
+  })
+  gsap.to("#flag", {
+    opacity: 0,
+  })
+})
+
+
+
+Shery.makeMagnet("#lnav i, #rnav h3");
+}
+pg1Animation();
+
+
+
+function pg2Animation () {
+  var videoContainer = document.querySelector("#video-container");
+  var video = document.querySelector("#video-container video");
+  var videoCurser = document.querySelector("#video-curser");
+   var flag = false
+  videoContainer.addEventListener("mouseenter", function(){
+      videoContainer.addEventListener("mousemove", function(det){
+        gsap.to(".mousefollower",{
+          opacity: 0,
+        })
+        gsap.to("#video-curser", {
+          left: det.x -500,
+          top: det.y -200,
+        })
+      })
+  })
+
+  videoContainer.addEventListener("mouseleave", function(){
+    gsap.to(".mousefollower",{
+      opacity: 1,
+    })
+    gsap.to("#video-curser", {
+      left: "70%",
+      top: "-10%",
+    })
+   
+  })
+
+
+    videoContainer.addEventListener("click", function() {
+      if (flag == false) {
+        video.play();
+        video.style.opacity = 1;
+        videoCurser.innerHTML = `<i class="ri-pause-line"></i>`
+        gsap.to("#video-curser", {
+         scale: .5, 
+        })
+        flag = true
+      }
+      else {
+        video.pause();
+        video.style.opacity = 0;
+        videoCurser.innerHTML = `<i class="ri-play-line"></i>`
+        gsap.to("#video-curser", {
+         scale: 1, 
+        })
+        flag = false
+      }
+      
+    })
+
+}
+pg2Animation();
+
 
 function pg3Animation () {
   Shery.imageEffect(".image-div", {

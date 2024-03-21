@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="crsr"></div>
+    <!-- <div id="crsr"></div> -->
     <div id="loader">
         <div class="line">
             <div id="line1-part1">
@@ -35,7 +35,7 @@
         
     </div>
     <div id="main">
-        <div id="pg1" data-scroll >
+        <div id="pg1" data-scroll data-scroll-speed ="-2" >
             <div id="nav">
                 <div id="lnav">
                     <i class="ri-menu-line"></i>
@@ -70,7 +70,7 @@
             <div class="hero">
                 <h1>Unique</h1>
             </div>
-            <div class="hero">
+            <div id="hero3" class="hero">
                 <h1 id="brdr1">Web</h1>
                 <h1>/</h1>
                 <h1 id="brdr2">Graphic</h1>
@@ -78,14 +78,14 @@
             <div class="hero">
                 <h1>Experience</h1>
             </div>
+            <img id="flag" src="Images/Flag.jpg" alt="">
         </div>
-        <div id="pg2" data-scroll data-scroll-speed ="2" >
+        <div id="pg2" data-scroll data-scroll-speed ="-1" >
             <div id="video-container">
-                <div id="video-cursor">
+                <div id="video-curser">
                     <i class="ri-play-fill"></i>
                 </div>
-                <img src="https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg" alt="">
-                <video src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4" autoplay muted loop></video>
+                <video src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"></video>
             </div>
         </div>
         <div id="pg3" data-scroll >
@@ -196,7 +196,7 @@
         
            </div>
         </div>
-        <div id="pg6">
+        <div id="pg6" data-scroll >
             <h1>Let's Create</h1>
             <div class="underline"></div>
             <div id="social">
@@ -227,11 +227,13 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Three.js is needed for 3d Effects -->
+    
+   <!-- Three.js is needed for 3d Effects -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
     <!-- ControlKit is needed for Debug Panel -->
     <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
     <script  type="text/javascript"  src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+     
     <script src="script.js"></script>
 </body>
 </html>
