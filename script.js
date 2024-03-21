@@ -89,13 +89,13 @@ tl.to ("#loader", {
 tl.from ("#pg1 #nav h3", {
   opacity: 0,
   duration: .2,
-})
+},"nav-hero")
 
 tl.from ("#pg1 .hero h1", {
   y: 120,
   stagger: .2,
   duration: .5,
-})
+},"nav-hero")
 
 
 
@@ -109,6 +109,7 @@ body.addEventListener("mouseover", function(det){
     gsap.to("#crsr",{
       left: det.x,
       top: det.y,
+      ease: Power1,
     });
 });
 }
@@ -122,4 +123,4 @@ cursor();
 
 
 
-Shery.makeMagnet("#nav h3, i");
+Shery.makeMagnet("#rnav h3, #lnav i");

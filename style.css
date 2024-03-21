@@ -199,27 +199,48 @@ html, body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* PAGE2     PAGE2      PAGE2      PAGE2      PAGE2      PAGE2      PAGE2      PAGE2      PAGE2 */
 #pg2 {
     width: 100%;
     height: 100vh;
+    /* background-color: red; */
+}
+#video-container {
+    height: 70vh;
+    width: 60vw;
+    position: relative;
+    top: 15vh;
+    left: 35vw;
+    overflow: hidden;
+    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+    object-fit: cover;
+}
+#video-container img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#video-cursor {
+    position: absolute;
+    top: 2%;
+    left: 80%;
+
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    background-color: #FFA63D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#video-cursor i {
+    font-size: 3vw;
 }
 
 
@@ -227,5 +248,236 @@ html, body {
 /* PAGE3     PAGE3      PAGE3      PAGE3      PAGE3      PAGE3      PAGE3      PAGE3      PAGE3 */
 #pg3 {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    /* background-color: yellow; */
 }
+
+
+
+
+/* PAGE4     PAGE4      PAGE4      PAGE4      PAGE4      PAGE4      PAGE4      PAGE4      PAGE4 */
+#pg4 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    font-family: "Plain";
+    padding: 5vw 4vw;
+}
+#pg4>h1 {
+    font-size: 8vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 27%;
+    letter-spacing: -.2vw;
+    /* background-color: red; */
+}
+#pg4 h5 {
+    position: absolute;
+    left: 20%;
+    top: 5%;
+    font-size: 3.2vw;
+    font-style: italic;
+    font-family: "Silk Serif";
+    font-weight: 100;
+   
+}
+#pg4 .underline {
+    margin-top: 10vh;
+    margin-left: 27%;
+    width: 73%;
+    height: .05vw;
+    background-color: white;
+}
+#pg4>p {
+    margin-top: 5vh;
+    font-size: 2.3vw;
+    line-height: 2.5vw;
+    font-weight: 100;
+    margin-left: 27%;
+    margin-bottom: 5vh;
+}
+#pg4-flex {
+    display: flex;
+    gap: 1.5vw;
+}
+#pg4-flex img {
+    width: 35%;
+    height: 84vh;
+    margin-left: 27%;
+}
+#pg4-flex>p {
+    width: 20%;
+    font-size: 1vw;
+    font-weight: 100;
+    line-height: 1.4vw;
+}
+#pg4-blue {
+    width: 32%;
+    height: 80vh;
+    background-color: #3F7DF4;
+    padding: 4vw 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: 51%;
+    margin-top: -33vh;
+    margin-bottom: 16vh;
+}
+.blue-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-bottom: 1px solid white;
+
+}
+.blue-line h2 {
+    font-size: 1.6vw;
+    font-weight: 400;
+    margin-bottom: 3vw;
+}
+.blue-line>p {
+    width: 40%;
+    margin-bottom: 2vw;
+}
+
+#pg4 h6 {
+    font-size: 1vw;
+    font-weight: 400;
+    margin-top: 2vh;
+    margin-left: 27%;
+
+}
+
+
+/* PAGE5     PAGE5      PAGE5      PAGE5      PAGE5      PAGE5      PAGE5      PAGE5      PAGE5 */
+
+#pg5 {
+    width: 100%;
+    min-height: 80vh;  
+    overflow: hidden;
+    font-family: "Plain";
+   
+}
+#scroll h1 span {
+    font-family: "Silk Serif";
+    /* font-weight: 500; */
+}
+
+.scroll1 {
+    width: fit-content;
+    height: fit-content;
+    text-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: all .5s;
+    animation: scroll 25s linear infinite ;
+}
+.scroll1::-webkit-scrollbar {
+    display: none;
+}
+.scroll1 h1 {
+    font-size: 7.5vw;
+    line-height: .8;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .1px rgba(255, 255, 255, 0.700);
+    display: inline-block;
+}
+
+.scroll2 {
+    width: fit-content;
+    height: fit-content;
+    text-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: all .5s;
+    animation: scroll 25s linear infinite reverse;
+}
+.scroll2::-webkit-scrollbar {
+    display: none;
+}
+.scroll2 h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .1px rgba(255, 255, 255, 0.700);
+    display: inline-block;
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+    
+}
+
+/* PAGE6     PAGE6      PAGE6      PAGE6      PAGE6      PAGE6      PAGE6      PAGE6      PAGE6 */
+
+#pg6 {
+    width: 100%;
+    height: 100vh;
+    padding: 15vh 5vw 3vh 27vw;
+    position: relative;
+    font-family: "Plain";
+}
+#pg6>h1 {
+    font-size: 7.5vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: -.1vw;
+    margin-left: -7.2vw;
+}
+#pg6>h1::before {
+    content: "04";
+    font-size: 3.3vw;
+    margin-right: 3vw;
+    position: relative;
+    top: -6vh;
+    font-family: "Silk Serif";
+}
+#pg6>.underline {
+    margin-top: 3vh;
+    
+    /* width: 73%; */
+    height: .05vw;
+    background-color: rgba(255, 255, 255, 0.900);
+}
+#social {
+    width: 94%;
+    margin-top: 6vh;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin-bottom: 10vh;
+}
+#social #sleft {
+    display: flex;
+    flex-direction: column; 
+}
+#social h5 {
+    font-size: 1.1vw;
+    font-weight: 100;
+    margin-bottom: 5vh;
+}
+#social a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.900);
+    font-size: 1.8vw;
+    line-height: 2.1vw;
+}
+#sright a{
+    border-bottom: .5px solid rgba(255, 255, 255, 0.900);
+}
+#pg6 h6 {
+    margin-top: 5vh;
+    font-size: 1.1vw;
+    letter-spacing: .04vw;
+}
+
