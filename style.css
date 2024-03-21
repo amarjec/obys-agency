@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Plain";
+    src: url(Fonts/plain-regular-webfont.ttf);
+}
+@font-face {
+    font-family: "Silk Serif";
+    src: url(Fonts/silkserif-regularitalic-webfont.ttf);
+}
+@font-face {
+    font-family: "Silk Serif";
+    src: url(Fonts/silkserif-lightitalic-webfont.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +20,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: 'Silk Serif';
-    background-color: #151515;
+    background-color: #151515; 
     color: #FFFFFF;
 }
 #crsr {
@@ -206,11 +219,11 @@ html, body {
     /* background-color: red; */
 }
 #video-container {
-    height: 70vh;
-    width: 60vw;
+    height: 80vh;
+    width: 70vw;
     position: relative;
-    top: 15vh;
-    left: 35vw;
+    top: 5vh;
+    left: 25vw;
     overflow: hidden;
     background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
     object-fit: cover;
@@ -250,11 +263,249 @@ html, body {
     width: 100%;
     min-height: 100vh;
     position: relative;
+    font-family: "Plain";
+}
+#pg3>h1 {
+    font-size: 7.5vw;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: -.1vw;
+    margin-left: 20vw;
+}
+#pg3>h1::before {
+    content: "02";
+    font-size: 3.3vw;
+    margin-right: 3vw;
+    position: relative;
+    top: -6vh;
+    font-family: "Silk Serif";
+}
+#pg3>.underline {
+    margin-top: 3vh;
+    height: .05vw;
+    background-color: rgba(255, 255, 255, 0.900);
+    margin-left: 27VW;
+    margin-right: 3vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+#image-container {
+    width: 100%;
+    min-height: 80vh;
+    /* background-color: red; */
+    padding: 5vh 3vw ;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.image-div {
+    width: 30vw;
+    height: 38vw;
     /* background-color: yellow; */
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin: 2vw;
+}
+.image-div:nth-child(1) {
+    width: 22vw;
+    height: 27vw;
+}
+.image-div:nth-child(5) {
+    margin-left: 3vw;
+    margin-top: 30vh;
+}
+.image-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pg3-circle1 {
+    width: 23vw;
+    height: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45vh;
+    margin-left: 5vw;
+    position: relative;
+    overflow: hidden;
+}
+.pg3-circle1 svg {
+    /* width: 100%; */
+    height: 40%;
+}
+.gola {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .3 s;
+    /* position: relative; */
+    scale: 0;
+}
+.gola p {
+    width: 70%;
+    font-size: .9vw;
+    color: #0B0B0B;
+    font-weight: 500;
+    scale: 0;
+    opacity: 0;
+    transition: all ease .3s;
+    transition-delay: .4s;
+}
+.pg3-circle1:hover .gola {
+    scale: 1;
+}
+.pg3-circle1:hover .gola p {
+    scale: 1;
+    opacity: 1;
 }
 
+.pg3-circle2 {
+    width: 23vw;
+    height: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 
+}
+.pg3-circle2 svg {
+    rotate: -45deg;
+    height: 40%;
+}
+.gola2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .3 s;
+    scale: 0;
+    z-index: 99;
+}
+.gola2 p {
+    width: 100%;
+    font-size: .9vw;
+    color: #0B0B0B;
+    font-weight: 500;
+    scale: 0;
+    opacity: 0;
+    transition: all ease .3s;
+    transition-delay: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pg3-circle2:hover .gola2 {
+    scale: 1;
+}
+.pg3-circle2:hover .gola2 p {
+    scale: 1;
+    opacity: 1;
+}
+.image-div:nth-child(7) {
+    width: 25vw;
+    height: 30vw;
+}
+.pg3-circle3 {
+    width: 23vw;
+    height: 23vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 55vh;
+    margin-left: 3VW;
 
+}
+.pg3-circle3 svg {
+    rotate: -90deg;
+    height: 40%;
+}
+.gola3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .3 s;
+    scale: 0;
+    z-index: 99;
+}
+.gola3 p {
+    width: 100%;
+    font-size: .9vw;
+    color: #0B0B0B;
+    font-weight: 500;
+    scale: 0;
+    opacity: 0;
+    transition: all ease .3s;
+    transition-delay: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pg3-circle3:hover .gola3 {
+    scale: 1;
+}
+.pg3-circle3:hover .gola3 p {
+    scale: 1;
+    opacity: 1;
+}
+.image-div:nth-last-child(1) {
+    margin-top: 15vh;
+    width: 30vw;
+    height: 40vw;
+}
+
+.pg3-btm {
+    width: 20vw;
+    height: 20vw;
+    background-color: #FFA63D;
+    border-radius: 50%;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all ease .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pg3-btm:hover {
+    scale: .7;
+}
+.pg3-btm p {
+   font-size: 1.1vw;
+   color: #fff;
+   font-weight: 400;
+}
 
 /* PAGE4     PAGE4      PAGE4      PAGE4      PAGE4      PAGE4      PAGE4      PAGE4      PAGE4 */
 #pg4 {
@@ -394,7 +645,7 @@ html, body {
     overflow-x: auto;
     overflow-y: hidden;
     transition: all .5s;
-    animation: scroll 25s linear infinite reverse;
+    animation: scroll 24s linear infinite reverse;
 }
 .scroll2::-webkit-scrollbar {
     display: none;
@@ -481,3 +732,7 @@ html, body {
     letter-spacing: .04vw;
 }
 
+._canvas_container {
+    z-index: 9999999 !important;
+    pointer-events: none; 
+}
