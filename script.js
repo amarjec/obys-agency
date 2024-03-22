@@ -70,7 +70,7 @@ tl.from (".line h1, h2", {
 }, "hello")
 
 tl.to ("#loader", {
-    delay: 2,
+    delay: 2.6,
     duration: .4,
     opacity: 0, 
     ease: Power1,  
