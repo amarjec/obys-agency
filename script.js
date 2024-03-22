@@ -58,7 +58,7 @@ tl.from ("#line1-part1 h5, h6", {
                 if(count <= 100) {
                     timer.innerHTML = count++;
          }   
-        }, 31)
+        }, 27)
     }
 }, "hello")
 tl.from (".line h1, h2", {
@@ -70,7 +70,7 @@ tl.from (".line h1, h2", {
 }, "hello")
 
 tl.to ("#loader", {
-    delay: 2.6,
+    delay: 2.4,
     duration: .4,
     opacity: 0, 
     ease: Power1,  
